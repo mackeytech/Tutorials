@@ -29,7 +29,8 @@
  *           will submit temp to field 1 and the humidity to field 1). Inside your new
  *           channel select the API Keys tabs and find the update a channel feed link. This
  *           is the link we will send the data to. Copy and paste it in the code inside the
- *           quotes. Make sure you remove the 0 after the equal sign at the end.
+ *           quotes. Make sure you remove the 0 after the equal sign at the end. 
+ *           ***Also, you will need to remove the 's' from the https so the url is just http
  *   
  *   Step 4: Update the wifi settings, replace the network name and password with the parameters
  *           for the network you would like to connect your device to.
@@ -170,10 +171,7 @@ void loop() {
         HTTPClient http;
 
         Serial.print("[HTTP] begin...\n");
-        // configure traged server and url
-        //http.begin("https://192.168.1.12/test.html", "7a 9c f4 db 40 d3 62 5a 6e 21 bc 5c cc 66 c8 3e a1 45 59 38"); //HTTPS
-        //http.begin("http://api.thingspeak.com/update?api_key=NPHNYM9J3JHM57FC&field1=72"); //HTTP
-
+        
         http.begin(bufferRequest); 
   
         Serial.print("[HTTP] GET...\n");
