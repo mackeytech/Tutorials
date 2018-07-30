@@ -13,7 +13,7 @@
  *     CH340 or CP2102 USB drivers. All boards sold by Mackey Tech use
  *     the CP2102 driver. 
  *     https://www.silabs.com/products/development-tools/software/usb-to-uart-bridge-vcp-drivers
- *   4. Installed the DHT sensor library by Adafruit
+ *   4. Installed the DHT sensor and the Adafruit Unified Sensor libraries by Adafruit
  *   
  *   ****All code edits in program will be marked with the applicable steps
  *   noted below.
